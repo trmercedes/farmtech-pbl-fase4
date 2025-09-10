@@ -1,0 +1,23 @@
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.venv/
+venv/
+env/
+*.env
+
+# Dados processados (se existirem)
+data/processed/*
+!data/processed/.gitkeep
+
+# SO/IDE
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
