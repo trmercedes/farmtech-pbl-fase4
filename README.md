@@ -9,7 +9,7 @@
 
 Este repositório contém o notebook desenvolvido na Fase 4, que utiliza técnicas de Machine Learning para prever o rendimento agrícola com base em variáveis climáticas.
 
-👉 
+👉 https://github.com/trmercedes/farmtech-pbl-fase4/blob/main/tiagoribeiromercedesvalenca_rm565890_pbl_fase4.ipynb
 
 ### Vídeo da Entrega 1
 Demonstração do notebook em execução:  
@@ -19,18 +19,15 @@ Demonstração do notebook em execução:
 
 ## Como executar o Notebook
 
-1. Baixe este repositório ou clone com Git:
-   ```bash
-   git clone https://github.com/SEU_USUARIO/farmtech-pbl-fase4.git
-   cd farmtech-pbl-fase4
-   ```
+1. Baixe este repositório :
+https://github.com/trmercedes/farmtech-pbl-fase4/blob/main/tiagoribeiromercedesvalenca_rm565890_pbl_fase4.ipynb
+   
 
 2. Verifique se o dataset está no caminho correto:
-   ```
-   data/raw/crop_yield.csv
-   ```
 
-3. Instale as dependências necessárias:
+   data/raw/crop_yield.csv
+
+4. Instale as dependências necessárias:
    ```bash
    pip install -r requirements.txt
    ```
@@ -39,12 +36,12 @@ Demonstração do notebook em execução:
    pip install pandas numpy scikit-learn matplotlib seaborn
    ```
 
-4. Abra o notebook com Jupyter:
+5. Abra o notebook com Jupyter:
    ```bash
    jupyter notebook tiagoribeiromercedesvalenca_rm565890_pbl_fase4.ipynb
    ```
 
-5. Execute as células de cima para baixo (Shift + Enter em cada uma).
+6. Execute as células de cima para baixo (Shift + Enter em cada uma).
 
 ---
 
@@ -60,26 +57,17 @@ Demonstração do notebook em execução:
 
 ## Entrega 2 - Computação em Nuvem (AWS)
 
-➡️ Aqui será adicionada a comparação de custos entre **São Paulo (sa-east-1)** e **Virgínia do Norte (us-east-1)** usando a **AWS Pricing Calculator**.  
-➡️ Inclui prints da calculadora, tabela comparativa e justificativa técnica sobre a escolha da região.  
-➡️ Também ficará disponível o link para o segundo vídeo (YouTube - não listado).  
+### Comparação de Custos - AWS EC2 (On-Demand)
 
----
+| Região                  | Preço estimado / mês |
+|-------------------------|-----------------------|
+| São Paulo (sa-east-1)   | **US$ 5,55** |
+| Virgínia (us-east-1)    | **US$ 3,43** |
 
-## Estrutura do Repositório
-```
-├── tiagoribeiromercedesvalenca_rm565890_pbl_fase4.ipynb   ← Notebook Jupyter
-├── data/
-│   └── raw/
-│       └── crop_yield.csv                                ← Dataset
-└── README.md                                             ← Documentação
-```
+### Justificativa Técnica
+Apesar de a região da Virgínia (EUA) apresentar custo menor, a escolha correta é **São Paulo (sa-east-1)** porque:  
+- Atende às **restrições legais**, evitando armazenamento de dados sensíveis fora do Brasil.  
+- Garante **menor latência** e acesso mais rápido aos sensores instalados na fazenda.  
+- Mantém a conformidade e a confiabilidade da solução, mesmo com custo ligeiramente maior.
 
----
-
-## Observações
-- O notebook está completo, com código executado e comentado.  
-- O dataset usado está em `data/raw/crop_yield.csv`.  
-- O vídeo da Entrega 1 já está disponível no YouTube (não listado).  
-- Não serão feitos novos commits após a data de entrega.
-
+- link video youtube mostrando onde calculei cada custo com as especificações necessarias : https://youtu.be/0uKZairzZ1Q
